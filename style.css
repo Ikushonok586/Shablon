@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&');
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    animation: back 3s 9s forwards 1;
+}
+div{
+    width:500px;
+    height:500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    color:yellow;
+    animation:sample1 5s 1 forwards;
+}
+@keyframes sample1 {
+    0%{
+        transform: rotateY(0) translate(0);
+    }
+    33%{
+        transform:rotateY(2turn) translate(-500px, -100px);
+    }
+    66%{
+        transform:translate(500px, -100px);
+        border-radius:100px;
+        font-size:50px;
+        font-family: unset;
+        color:red;
+        background-color: red;
+    }
+    100%{
+        transform:translate(0);
+        border-radius:250px;
+        border:5px solid black;
+        color:black;
+        font-size:140px;
+        background-color: blue;
+        font-family: 'Rubik Wet Paint', cursive;
+    }
+}
+@keyframes back{
+    0%{
+        background: white;
+    }
+    50%{
+        background: url(1.jpg);
+        background-position: bottom center;
+        background-size: cover;
+    }
+    100%{
+        background: url(1.jpg);
+        background-position: center center;
+        background-size: cover;
+    }
+}
