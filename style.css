@@ -5,7 +5,7 @@ body{
     justify-content: center;
     align-items: center;
     perspective: 1000px;
-    animation: back 3s 9s forwards 1;
+    animation: back 3s 7s forwards 1;
 }
 div{
     width:500px;
